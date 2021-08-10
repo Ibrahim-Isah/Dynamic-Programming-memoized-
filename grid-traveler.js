@@ -13,3 +13,18 @@ const gridTraveler = (m, n, memo = {}) => {
 console.log(gridTraveler(5, 4));
 console.log(gridTraveler(8, 7));
 console.log(gridTraveler(3, 2));
+
+/*-------------------------------------REVISION --------------------------------------- */
+
+/*
+                            MEMOIZATION RECIPE (STRATEGY)
+        MAKE IT WORK
+    => Visualize the problem as a tree
+    => Implement the tree using recursion
+    => Test it (check for correction)
+
+        MAKE IT EFFICIENT
+    => Add a memo object
+    => Add a base case to return memo values
+    => Store return values into the memo
+*/
