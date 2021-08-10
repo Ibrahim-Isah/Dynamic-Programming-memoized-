@@ -10,7 +10,7 @@ const allConstruct = (target, wordBank, memo = {}) => {
     if (target.indexOf(word) === 0) {
       const suffix = target.slice(word.length);
       const suffixWays = allConstruct(suffix, wordBank, memo);
-      const targetWays = suffix.map((way) => [word, ...way]);
+      const targetWays = suffixWays.map((way) => [word, ...way]);
       result.push(...targetWays);
     }
   }
@@ -18,3 +18,6 @@ const allConstruct = (target, wordBank, memo = {}) => {
   memo[target] = result;
   return result;
 };
+
+console.log(allConstruct('Hello', ['Hi', 'ell', 'H', 'o', 'Hello']));
+console.log(allConstruct('Javascript', ['java', 'sci', 't']));
