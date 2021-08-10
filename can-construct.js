@@ -17,4 +17,5 @@ const canConstruct = (target, wordBank, memo = {}) => {
   return false;
 };
 
-console.log(canConstruct('Hello', ['Hi', 'el', 'H', 'o']));
+console.log(canConstruct('Hello', ['Hi', 'ell', 'H', 'o']));
+console.log(canConstruct('Javascript', ['java', 'sci', 't']));
